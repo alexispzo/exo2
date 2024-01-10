@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div id="site-header">
+        <header>
+            <a  href="">
+                <img class="logo" src="/images/logo.png" alt="">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="">Acceuil</a></li>
+                    <li><a href="">Pokedex</a></li>
+                    <li><a href="">Pokepedia</a></li>
+                    <li><a href="">A propos</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <div>
+            <button id="affichage" onclick="afficher()">Afficher les Pokemon !</button>
+        </div>
+        <div id="grid">
+
+
+        </div>
+    </main>
+
+    <template id="card-template">
+        <div class="card">
+            <div class="centrer">
+                <div>
+                    <img src="" class="card-img">
+                </div>
+                <p class="nom-francais">{{nom}}</p>
+                <p class="numero">#{{numero}}</p>
+                <div class="types"></div>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script2.js"></script>
+</body>
+</html>

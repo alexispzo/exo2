@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tesla</title>
+
+</head>
+
+
+<body onload="remplir_accessoires()">
+  
+
+  <header id="header-tesla">
+    <img class="logo" src="/images/logo.svg" alt="">
+    <nav>
+      <ul>
+        <li><a href="#model3">Model3</a></li>
+        <li><a href="#modelS">ModelS</a></li>
+        <li><a href="#powerwall">Powerwall</a></li>
+        <li><a href="#accessoires">Accessoires</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="model3" class="page">
+
+    <h1>Model 3</h1>
+    <a id="reserver" href=" ">RESERVEZ UN ESSAI SANS CONTACT</a>
+
+    <div class="bas-section">
+      <a class="btn-config" href="">CONFIGURATION PERSONNALISEE</a>
+      <a class="btn-vehicules" href="">VEHICULES DISPONNIBLES</a>
+      <p>A recu la note maximale de 5 etoiles par Euro NCAP</p>
+      <img id="model3-img" src=images/fleche.gif >
+    </div>
+
+  </section>
+
+  <section id="modelS" class="page">
+    <h1>Model S</h1>
+
+    <div class="bas-section">
+      <a class="btn-config" href="">CONFIGURATION PERSONNALISEE</a>
+      <a class="btn-vehicules" href="">VEHICULES DISPONNIBLES</a>
+    </div>
+  </section>
+  
+  <section id="powerwall" class="page">
+
+    <h1>Systeme d'enerrgie solaire et Powerwalls</h1>
+    <h2>De l'energie pour tout vos besoins</h2>
+    <div class="bas-section">
+      <a class="btn-config" href="">CONFIGURATION PERSONNALISEE</a>
+    </div>
+
+  </section>
+
+  <section id="accessoires" class="page">
+    <h1>Accessoires</h1>
+    <div id="grid-container">
+      
+    </div>
+
+    <footer id="footer-tesla">
+      <nav>
+        <ul>
+          <li><p>Tesla</p></li>
+          <li><p>Legale</p></li>
+          <li><p>Contact</p></li>
+          <li><p>Newsletter</p></li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
+
+  
+  <template id="template_accessoires" class="grid-container">
+    <div class="grid-item">
+        <img src="images/{{accessoires-image}}.jpg">
+        <div class="inner">
+            <h2>{{accessoires-titre}}</h2>
+            <p>
+                {{accessoires-texte}}
+            </p>
+        </div>
+        <a href="www.tesla.com/fr_fr">En savoir plus</a>
+    </div>
+  </template>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
